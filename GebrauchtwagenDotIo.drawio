@@ -1,89 +1,120 @@
 <mxfile host="65bd71144e">
     <diagram id="hvlOfWhVxwxNd8fSc36v" name="Page-1">
-        <mxGraphModel dx="1896" dy="1871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1259" dy="260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Verkäufer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="110" width="160" height="140" as="geometry"/>
+                <mxCell id="7" value="Termin" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="360" width="150" height="155" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="ID&#10;Vornamen&#10;Nachnamen&#10;Telefonnummer&#10;Mobilnummer&#10;Adresse&#10;Email" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="2" vertex="1">
-                    <mxGeometry y="30" width="160" height="110" as="geometry"/>
+                <mxCell id="8" value="-ID: int&#10;-VerkäuferID: int&#10;-KäuferID: int&#10;-GebrauchtwagenID: int&#10;-TransaktionsID: int&#10;-Ort: string&#10;-Zeit: datetime&#10;-Abschluss: boolean" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="7" vertex="1">
+                    <mxGeometry y="30" width="150" height="125" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="Transaktion" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="345" y="110" width="160" height="110" as="geometry"/>
+                <mxCell id="9" value="Bewertung" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry y="160" width="160" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="ID&#10;VerkäuferID&#10;KäuferID&#10;GebrauchtwagenID&#10;TransaktionsID" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7">
-                    <mxGeometry y="30" width="160" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="Bewertung" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="120" y="-60" width="160" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="10" value="Service&#10;freundlichkeit&#10;glaubwürdigkeit&#10;pünktlichkeit" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="9">
+                <mxCell id="10" value="-ID: int&#10;-Service: int&#10;-freundlichkeit: int&#10;-glaubwürdigkeit: int&#10;-pünktlichkeit: int" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="9" vertex="1">
                     <mxGeometry y="40" width="160" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" style="edgeStyle=none;html=1;entryX=0.6;entryY=0.95;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;endArrow=diamondThin;endFill=1;strokeColor=default;entryPerimeter=0;" edge="1" parent="1" source="13" target="35">
+                <mxCell id="13" value="Gebrauchtwagen" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry y="635" width="160" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="-ID: string&#10;-VerkäuferID: string&#10;-ModellID: string&#10;-gefahrene km: float&#10;-Preis: float&#10;-Unfallwagen: boolean&#10;-Baujahr: date&#10;-Fotos: string&#10;-Erstzulassung: date&#10;-Farbe: string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="13" vertex="1">
+                    <mxGeometry y="30" width="160" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;endArrow=none;endFill=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="19" target="13">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Gebrauchtwagen" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="290" width="160" height="180" as="geometry"/>
+                <mxCell id="18" value="Modell" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-250" y="340" width="150" height="220" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="ID&#10;VerkäuferID&#10;ModellID&#10;gefahrene km&#10;Preis&#10;Unfallwagen&#10;Baujahr&#10;Fotos&#10;Erstzulassung&#10;Farbe" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="13">
-                    <mxGeometry y="30" width="160" height="150" as="geometry"/>
+                <mxCell id="19" value="-ID : int&#10;-Name: String&#10;-Leistung: int&#10;-Sitze: int&#10;-Marke: String&#10;-Anzahl Türen: int&#10;-Hubraum: float&#10;-Getriebe: String&#10;-Schadstoffklasse: String&#10;-Kategorie ID: int&#10;-Airbags: boolean&#10;-Anzahl Sitze: int&#10;-Verbrauch:_ float" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="18" vertex="1">
+                    <mxGeometry y="30" width="150" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=none;html=1;" edge="1" parent="1" source="15" target="7">
+                <mxCell id="33" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=diamond;startFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="74" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="80" y="520" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="Kategorie" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-490" y="430" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="-ID: int&#10;-Kategorie: string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="40" vertex="1">
+                    <mxGeometry y="30" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=diamond;endFill=0;strokeColor=default;" parent="1" source="19" target="40" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Termin" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="340" y="-20" width="160" height="80" as="geometry"/>
+                <mxCell id="49" value="0...*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="280" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="ID&#10;Zeit&#10;Ort" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="15">
-                    <mxGeometry y="30" width="160" height="50" as="geometry"/>
+                <mxCell id="52" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="360" width="20" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="Modell" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="-210" y="230" width="150" height="250" as="geometry"/>
+                <mxCell id="55" value="0...*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="430" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="ID&#10;Name&#10;Leistung&#10;Sitze&#10;Marke&#10;Anzahl Türen&#10;Hubraum&#10;Getriebe&#10;Schadstoffklasse&#10;Kategorie ID&#10;Airbags&#10;Anzahl Sitze&#10;Verbrauch" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="18">
-                    <mxGeometry y="30" width="150" height="220" as="geometry"/>
+                <mxCell id="67" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="510" width="20" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Käufer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="550" y="110" width="160" height="140" as="geometry"/>
+                <mxCell id="68" value="0 ..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="610" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="ID&#10;Vornamen&#10;Nachnamen&#10;Telefonnummer&#10;Mobilnummer&#10;Adresse&#10;Email" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="11">
-                    <mxGeometry y="30" width="160" height="110" as="geometry"/>
+                <mxCell id="72" value="1 ..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-10" y="610" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="8">
+                <mxCell id="73" value="Nutzer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry y="360" width="160" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="-ID: int&#10;-Vornamen: String&#10;-Nachnamen: String&#10;-Telefonnummer: int&#10;-Mobilnummer: int&#10;-Adresse: String&#10;-Email: String&#10;-Händler: String" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="73">
+                    <mxGeometry y="30" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=diamond;endFill=1;" edge="1" parent="1" source="10" target="73">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="8">
+                <mxCell id="62" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="430" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="340" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;endArrow=none;endFill=0;" edge="1" parent="1" source="74" target="8">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="14" target="8">
+                <mxCell id="94" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;startArrow=diamond;startFill=0;endArrow=none;endFill=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="13" target="8">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="13">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="95" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="610" width="20" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="Gebrauchtwagen_Modell" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="-100" y="120" width="160" height="90" as="geometry"/>
+                <mxCell id="96" value="0...*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="495" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="ID&#10;Gebrauchtwagen ID&#10;Modell ID" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="34">
-                    <mxGeometry y="30" width="160" height="60" as="geometry"/>
+                <mxCell id="97" value="Fotos" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-260" y="680" width="160" height="85" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;startArrow=diamond;startFill=1;endArrow=diamondThin;endFill=1;labelPosition=left;verticalLabelPosition=top;align=right;verticalAlign=bottom;" edge="1" parent="1" source="10" target="2">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="98" value="-ID: int&#10;-Gebrauchtwagen ID: int&#10;-FotoUrl: string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="97">
+                    <mxGeometry y="30" width="160" height="55" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="Kategorie" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="-220" y="530" width="160" height="180" as="geometry"/>
+                <mxCell id="100" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=diamond;endFill=1;entryX=0.015;entryY=0.381;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="98" target="14">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-30" y="690" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="41" value="cabrio&#10;coupe&#10;kleinwagen&#10;kombi&#10;limousine&#10;suv&#10;transporter&#10;van&#10;anders&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="40">
-                    <mxGeometry y="30" width="160" height="150" as="geometry"/>
+                <mxCell id="101" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-30" y="730" width="20" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" style="edgeStyle=none;html=1;startArrow=diamond;startFill=1;endArrow=diamondThin;endFill=1;strokeColor=default;" edge="1" parent="1" source="19" target="40">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="102" value="3 ..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-100" y="730" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;endArrow=diamondThin;endFill=1;strokeColor=default;" edge="1" parent="1" source="35" target="18">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="104" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-90" y="540" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-270" y="440" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="1 ..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-370" y="440" width="40" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
